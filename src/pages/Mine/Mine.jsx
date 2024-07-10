@@ -14,8 +14,12 @@ const Mine=()=>{
         else{
             setScore(localStorage.getItem("score"));
         }
-        alert(localStorage.getItem("correct"));
         setGame(true);
+    }
+    const ending=()=>{
+        localStorage.removeItem("game");
+        localStorage.removeItem("score");
+        localStorage.removeItem("correct");
     }
     const endGame=async ()=>{
         setGame(false);
@@ -73,7 +77,7 @@ const Mine=()=>{
                                 setplayerInput(e.target.value)
                             }} />
                             <button onClick={checkNum}>Go</button>
-                            <button onClick={endGame}>End game</button>
+                            <button onClick={ending}>End game</button>
                         </div>
                     }
                 </div>
