@@ -1,0 +1,46 @@
+.transPage{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-height: 100vh;
+    width:100vw;
+    .transInner{
+        width:100%;
+        .child{
+            width: 100%;
+            .grandChild{
+                width: 100%;
+                .zeroTrans{
+                    background-color: #2712e417;
+                    padding:1rem;
+                    width:100%;
+                    text-align: left;
+                    border:1px solid #ffffff;
+                    border-radius: 6px;
+                    margin:3rem;
+                }
+                .allTrans{
+                    margin-top: 4rem;
+                    display: flex;
+                    align-items:center;
+                    justify-content: space-around;
+                    flex-direction: column;
+                    .eachTrans{
+                        text-align: left;
+                        background-color: #94cbff09;
+                        width:60%;
+                        padding: 1rem;
+                        border: 0 solid transparent;
+                        border-radius: 3px;
+                        display: flex;
+                        align-items: start;
+                        justify-content:flex-start;
+                        gap:1rem;
+                        flex-direction: row;
+                    }
+                }
+            }
+        }
+    }
+}
